@@ -1,0 +1,252 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#F7F7FF;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+
+/*---------------------------HEADER-------------------------------*/
+.contenedor{
+    background-color:#EA1D24;
+    width: 75%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenedor form{
+    text-align: center;
+}
+
+.contenedor h1{
+    text-align: center;
+    color:#F7F7FF;
+}
+
+.contenedor form div{
+    width: 20%;
+    margin: 20px auto;
+}
+
+.contenedor form div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #F7F7FF;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.contenedor form div div input{
+    background: none;
+    border:none;
+    outline:none;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor form div div button{
+    background: none;
+    border: none;
+    color: #EA1D24;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.contenedor form div div button:hover{
+    cursor: pointer;
+    color: #97151A;
+}
+
+.contenedor form div label{
+    color: #F7F7FF;
+    font-size: 20px;
+}
+
+.resultados{
+    color: #EA1D24;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+/*---------------------------WORKFLOW-------------------------------*/
+
+.workflow{
+    width: 75%;
+    margin: 0 auto;
+    padding: 30px;
+    display: block;
+}
+
+
+.workflow p{
+    margin: 10px 0;
+}
+
+.workflow .ladoIzq{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.workflow .ladoIzq div{
+    margin: 0 20px;
+}
+
+.workflow .ladoDer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.workflow .ladoDer div i{
+    position:absolute;
+    bottom: 10%;
+    left: 30%;
+    color: #F7F7FF;
+    font-size: 30px;
+}
+
+.workflow .ladoDer .rombo1{
+    width:180px;
+    height: 180px;
+    background: url('img/rombo1-transp.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.workflow .ladoDer .rombo2{
+    width:180px;
+    height: 180px;
+    background: url('img/rombo2-transp.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: -3%;
+}
+
+.workflow .ladoDer .rombo3{
+    width:180px;
+    height: 180px;
+    background: url('img/rombo2-transp.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: -3%;
+}
+
+.workflow .ladoDer .rombo4{
+    width:180px;
+    height: 180px;
+    background: url('img/rombo2-transp.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: -3%;
+}
+
+.workflow .ladoDer .rombo5{
+    width:180px;
+    height: 180px;
+    background: url('img/rombo2-transp.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: -3%;
+}
+
+.workflow .ladoDer div div{
+    margin-top: 22%;
+    margin-left: 15%;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*-------------Cambios de estado Para J-Query--------------------*/
+
+.rombo1-verde{
+    width:180px;
+    height: 180px;
+    background: url('img/rombo1-verde.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #F7F7FF;
+}
+
+.rombo2-rojo{
+    width:180px;
+    height: 180px;
+    background: url('img/rombo2-rojo.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: -3%;
+    color: #F7F7FF;
+}
+
+.rombo2-verde{
+    width:180px;
+    height: 180px;
+    background: url('img/rombo2-verde.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: -3%;
+    color: #F7F7FF;
+}
+
+
+/*------------MEDIA QUERIES-------------------*/
+
+@media screen and (max-width: 810px){
+	.contenedor{
+        width: 90%;
+    }
+
+    .workflow{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 630px){
+	.ladoIzq{
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    .contenedor h1{
+        font-size: 20px;
+    }
+
+    .contenedor form div label{
+        font-size: 14px;
+    }
+
+    .contenedor form div{
+        width: 90%;
+    }
+}
+
+
